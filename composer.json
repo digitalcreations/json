@@ -1,6 +1,6 @@
 {
     "name": "dc/json",
-    "version": "0.1.3",
+    "version": "0.1.0",
     "description": "JSON Serializer",
     "keywords": ["json", "serializer"],
     "homepage": "http://github.com/digitalcreations/json",
