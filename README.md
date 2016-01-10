@@ -41,7 +41,7 @@ $cats = $serializer->deserialize($catsJson, '\Cat[]');
 If you are using a `dc/ioc` container, you'll need to do this:
 
 ```php
-\DC\JSON\IoC\Setup::setup($container);
+\DC\JSON\IoC\SerializerSetup::setup($container);
 ```
 
 # Serialization handlers

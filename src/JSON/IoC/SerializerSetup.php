@@ -1,8 +1,8 @@
 <?php
 
-namespace \DC\JSON\IoC;
+namespace DC\JSON\IoC;
 
-class Setup
+class SerializerSetup
 {
     public static function setup(\DC\IoC\Container $container) {
         $container->register(function() { return new \DC\JSON\CamelCaseNamingConvention(); })->to('\DC\JSON\NamingConvention')->withContainerLifetime();
