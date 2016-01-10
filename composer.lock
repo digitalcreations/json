@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "df9730c8e4e09dffea37a1fe2a8205ec",
-    "content-hash": "f6792898851028ed66e503524caa49f5",
+    "hash": "0bf3d0d707a633327a5d8bbe2526d396",
+    "content-hash": "28c7b9866b2660df007fef833da32ad2",
     "packages": [
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -104,6 +104,55 @@
                 "memcached"
             ],
             "time": "2014-10-27 08:45:47"
+        },
+        {
+            "name": "dc/ioc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digitalcreations/ioc.git",
+                "reference": "89efc42e6d0207311d4313180d11d75d3cdd73b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digitalcreations/ioc/zipball/89efc42e6d0207311d4313180d11d75d3cdd73b0",
+                "reference": "89efc42e6d0207311d4313180d11d75d3cdd73b0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DC\\IoC\\": "src/IoC"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Digital Creations AS",
+                    "homepage": "http://www.digitalcreations.no",
+                    "role": "Company"
+                },
+                {
+                    "name": "Vegard Andreas Larsen",
+                    "homepage": "http://vega.rd.no",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple IoC container",
+            "homepage": "http://github.com/digitalcreations/ioc",
+            "keywords": [
+                "dependency injection",
+                "di",
+                "inversion of control",
+                "ioc"
+            ],
+            "time": "2015-06-16 11:00:40"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -727,7 +776,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "dc/ioc": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -38,6 +38,27 @@ $serializer = new \DC\JSON\Serializer();
 $cats = $serializer->deserialize($catsJson, '\Cat[]');
 ```
 
+If you are using a `dc/ioc` container, you'll need to do this:
+
+```php
+\DC\JSON\IoC\Setup::setup($container);
+```
+
+# Serialization handlers
+
+You can register a serialization handler to change how a specific class is serialized. This is different from using the
+`JsonSerializable` interface in PHP, as a serialization handler allows you to change how built-in classes are serialized
+and deserialized.
+
+The interface itself is easy to implement. The library comes with one default handler, which serializes `\DateTime` 
+objects to and from ISO-8601 format. Look at that handler for a good example.
+
+If you want to register serialization your own handlers, it is easiest to do using IoC:
+
+```php
+$container->register('\MyHandler')->to('\DC\JSON\Handler')->withContainerLifetime();
+```
+
 # How classes are constructed
 
 Classes are constructed in this manner:
