@@ -4,12 +4,12 @@ namespace DC\JSON;
 
 class HandlerRegistry {
     /**
-     * @var Handler[]
+     * @var \DC\JSON\Handler[]
      */
     private $handlers = [];
 
     /**
-     * @param Handler[] $handlers
+     * @param $handlers \DC\JSON\Handler[]
      */
     public function __construct(array $handlers = null)
     {
