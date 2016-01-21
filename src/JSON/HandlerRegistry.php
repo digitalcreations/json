@@ -9,7 +9,7 @@ class HandlerRegistry {
     private $handlers = [];
 
     /**
-     * @param $handlers \DC\JSON\Handler[]
+     * @param \DC\JSON\Handler[] $handlers
      */
     public function __construct(array $handlers = null)
     {
